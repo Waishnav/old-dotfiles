@@ -1,6 +1,6 @@
 # dotfiles
 
-##Info 
+## Info 
 ```
 OS          Arch x86_64
 ker         5.13.13_1
