@@ -1,4 +1,5 @@
-# dotfiles
+# Don't SKIP the README
+## Screenshots (BSPWM rice)
 
 ## Info 
 ```
