@@ -1,6 +1,7 @@
 # Don't skip the README
 ## Screenshots (BSPWM rice)
 <img src = "https://cdn.discordapp.com/attachments/635625917623828520/884131683295719524/unknown.png">
+
 ## Info 
 ```
 OS          Arch x86_64
