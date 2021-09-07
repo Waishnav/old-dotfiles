@@ -10,5 +10,5 @@ bar         Polybar
 terminal    Kitty
 sh          fish
 editor      nvim / vscode (learning nvim)
-font        JetBrians Mono Nerd Font
+font        JetBrains Mono Nerd Font
 ```
