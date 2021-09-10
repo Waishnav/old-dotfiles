@@ -15,6 +15,3 @@ editor      nvim / vscode (learning nvim)
 font        JetBrains Mono Nerd Font
 ```
 ## Important Notes 
-Before clonning my repo First you need to install some dependancies...
- - Nerd font (I use JetBrains Mono Nerd Font)
- - 
