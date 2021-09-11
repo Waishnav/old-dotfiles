@@ -1,6 +1,6 @@
 # Don't skip the README
 ## Screenshots (BSPWM rice)
-<img src = "https://cdn.discordapp.com/attachments/635625917623828520/884131683295719524/unknown.png">
+<img src = "https://cdn.discordapp.com/attachments/846673042893832195/886288339920097370/unknown.png">
 
 ## Info 
 ```
