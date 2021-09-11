@@ -1,4 +1,4 @@
-;==========================================================
+;#68809a==========================================================
 ;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
@@ -19,6 +19,7 @@
 [colors]
 background = #1c1f26
 foreground = #adb1b9   
+background-alt = #33363d 
 
 color0 = ${xrdb:color0}
 color1 = ${xrdb:color1}
@@ -90,7 +91,7 @@ content-background = #BF616A
 [module/space-c1]
 type = custom/text
 content = %{T1} %{T-}
-content-background = #2e323b
+content-background = ${colors.background-alt}
 
 [module/space-c2]
 type = custom/text
@@ -100,26 +101,26 @@ content-background = #1c1f26
 [module/round-left-c1]
 type = custom/text
 content = %{T2}%{T-}
-content-foreground = #2e323b
+content-foreground = ${colors.background-alt}
 content-background = #1c1f26
 
 [module/round-left-c2]
 type = custom/text
 content = %{T2}%{T-}
 content-foreground = #1c1f26
-content-background = #2e323b
+content-background = ${colors.background-alt}
 
 [module/round-right-c1]
 type = custom/text
 content = %{T2}%{T-}
-content-foreground = #2e323b
+content-foreground = ${colors.background-alt}
 content-background = #1c1f26
 
 [module/round-right-c2]
 type = custom/text
 content = %{T2}%{T-}
 content-foreground = #1c1f26
-content-background = #2e323b
+content-background = ${colors.background-alt}
 
 [module/round-left-c3]
 type = custom/text
@@ -131,7 +132,7 @@ content-background = #1c1f26
 type = custom/text
 content = %{T2}%{T-}
 content-background = #BF616A
-content-foreground = #2e323b
+content-foreground = ${colors.background-alt}
 
 [module/polywins]
 type = custom/script
@@ -185,29 +186,29 @@ ws-icon-5 = 6;%{F#B48EAD}󰎁
 ws-icon-6 = 7;%{F#989cff}󰙴
 
 ;label-separator = "|"
-;label-separator-background = #2e323b
+;label-separator-background = ${colors.background-alt}
 ;label-separator-foreground = #676d75
 
 label-focused = %icon%  
-label-focused-foreground = #2e323b
+label-focused-foreground = ${colors.background-alt}
 label-focused-underline = #999ba1
 label-focused-padding = 1
-label-focused-background = #2e323b
+label-focused-background = ${colors.background-alt}
 
 label-occupied = %icon%  
 label-occupied-foreground = #676d75  
-label-occupied-background = #2e323b
+label-occupied-background = ${colors.background-alt}
 label-occupied-padding = 1
 label-occupied-font = 1
 
 label-empty = %icon%
-label-empty-foreground = #2e323b
+label-empty-foreground = ${colors.background-alt}
 label-empty-padding = 1
-label-empty-background = #2e323b
+label-empty-background = ${colors.background-alt}
 
 label-urgent = %icon%
 label-urgent-foreground = #88C0D0
-label-urgent-background = #2e323b
+label-urgent-background = ${colors.background-alt}
 label-urgent-padding = 1
 
 [module/xwindow]
@@ -223,9 +224,9 @@ format-padding = 1
 type = internal/date
 interval = 60
 format = <label>
-;format-background = #2e323b
-date = %{F#adb1b9}%{B#2e323b}%{T8}󰥔 %{T-}%H:%M%{F-} 
-time-alt = %{F#adb1b9}%{B#2e323b}%{T8}󰃭 %{T-}%a, %b %d%{F-}
+;format-background = ${colors.background-alt}
+date = %{F#adb1b9}%{B#33363d}%{T8}󰥔 %{T-}%H:%M%{F-} 
+time-alt = %{F#adb1b9}%{B#33363d}%{T8}󰃭 %{T-}%a, %b %d%{F-}
 format-font=6
 label = %time%%date%
 
@@ -239,7 +240,7 @@ format-muted-foreground = ${colors.foreground}
 label-muted = ""
 
 format-muted-padding = 2
-;format-muted-background = #2e323b
+;format-muted-background = ${colors.background-alt}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #61afef
@@ -300,7 +301,7 @@ format-full-prefix = "  "
 
 format-full-prefix-foreground = #A0E8A2
 format-foreground = ${colors.color4}
-format-background = #2e323b
+format-background = ${colors.background-alt}
 
 label-discharging-foreground = ${colors.foreground}
 
@@ -365,20 +366,20 @@ format = <label>
 label = %output% MB
 ;label-font = 6
 ;label-padding = 1
-format-background = #2e323b
+format-background = ${colors.background-alt}
 format-foreground = #d19a66
 
 [module/network]
 type = internal/network
 interface = ens33
 interval = 0.6
-label-connected = "  %downspeed% "
+label-connected = "󰤪  %upspeed% 󰯎 %downspeed% "
 label-connected-font = 6
 label-disconnected = " 󰤫  "
-label-disconnected-background = #2e323b
+label-disconnected-background = ${colors.background-alt}
 label-disconnected-font = 6
 label-disconnected-foreground = ${colors.foreground}
-label-connected-background = #2e323b
+label-connected-background = ${colors.background-alt}
 label-connected-foreground = #A3BE8C
 
 click-left = applet_backlight
