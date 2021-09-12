@@ -6,7 +6,7 @@ super + t
 #super + ctrl + b
 #        brave
 
-super + @space
+super + space
         rofi -show drun
 
 # reload config (bspwmrc and sxhkdrc)  # 
@@ -19,7 +19,7 @@ super + shift + e
 #dmenu
 
 super + ctrl + d
-  dmenu_run -fn "JetBrains Mono Medium-12"
+  dmenu_run -fn
 
 #  ------ brightness  -------i- # 
 
