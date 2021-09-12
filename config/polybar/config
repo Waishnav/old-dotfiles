@@ -1,4 +1,4 @@
-;#68809a==========================================================
+;==========================================================
 ;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
@@ -175,7 +175,7 @@ ws-icon-1 = 2;%{F#EBCB8B}󰇧
 ws-icon-2 = 3;%{F#BF616A}󰓏
 ;gfx
 ;
-ws-icon-3 = 4;%{F#A3BE8C}󰝚
+ws-icon-3 = 4;%{F#86c276}󰝚
 ;mus
 ;
 ws-icon-4 = 5;%{F#81A1C1}󰙯
@@ -375,12 +375,12 @@ interface = ens33
 interval = 0.6
 label-connected = "󰤪  %upspeed% 󰯎 %downspeed% "
 label-connected-font = 6
-label-disconnected = " 󰤫  "
+label-disconnected = " 󰤠  "
 label-disconnected-background = ${colors.background-alt}
 label-disconnected-font = 6
 label-disconnected-foreground = ${colors.foreground}
 label-connected-background = ${colors.background-alt}
-label-connected-foreground = #A3BE8C
+label-connected-foreground = #86c276
 
 click-left = applet_backlight
 
