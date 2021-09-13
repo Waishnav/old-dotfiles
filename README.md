@@ -16,4 +16,23 @@ editor          nvim (learning nvim)
 font            JetBrains Mono Nerd Font
 ```
 ## Important Notes 
-1
+
+<a id="keybinds"></a>
+## Keybinds 
+
+These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more keybinds like increasing/decreasing size of window in floating mode
+
+|        Keybind           |                 Function                 |
+| ------------------------ | ---------------------------------------- |
+| `Super + Enter`          | Launch terminal (kitty)                  |
+| `Super + W`              | Close window                             |
+| `Super + Space`          | Open rofi menu                           |
+| `Super + H,J,K,L`        | Navigate through windows                 |
+| `Super + Shift + T,W`    | Switch through layouts (tall,wide}       |
+| `Super + T`              | Make a floating window tiled             |
+| `Super + F`              | Make a tiled window floating             |
+| `Super + 1,2,3,4,5,6,7`  | Switch Workspaces                        |
+| `Super + alt + `
+
+Note: 1.`Toggling` means to enable if inactive or to disable if active.
+      2 `Super` refers to the `Win` key.
