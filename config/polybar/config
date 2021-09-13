@@ -63,7 +63,7 @@ wm-restack = bspwm
 
 modules-left = bspwm round-right-c1 xwindow
 modules-center = space-c2 round-left-c1 time round-right-c1
-modules-right = wlan round-left-c1 network round-left-c2 cpu space-c2 round-left-c1 mem space-c1 round-left-c2 powermenu space-c2 space-c2
+modules-right = round-left-c1 network round-left-c2 cpu space-c2 round-left-c1 mem space-c1 round-left-c2 powermenu space-c2 space-c2
 
 font-0 = JetBrains Mono Nerd Font:style=Bold:pixelsize=11;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
