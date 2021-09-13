@@ -71,12 +71,12 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {1,2,3,4,5,6,7}
-	bspc desktop -f {1,2,3,4,5,6,7}
+super + {1-7}
+	bspc desktop -f {1-7}
 
 #send window to selected desktop
-super + control + {1,2,3,4,5,6,7}
-        bspc {node -d ^{1,2,3,4,5,6,7}
+super + control + {1-7}
+        bspc node -d ^{1-7}
 
 # focus the older or newer node in the focus history
 super + {o,i}
