@@ -1,6 +1,8 @@
 # Don't skip the README
 ## Screenshots (BSPWM rice)
-<img src = "https://cdn.discordapp.com/attachments/846673042893832195/886930186757615656/unknown.png">
+|kitty & fish & neofetch|rofi-launcher and nvim|
+|-|-|
+|<img height="210px" src="https://cdn.discordapp.com/attachments/846673042893832195/886930186757615656/unknown.png">|<img height="210px" src="https://cdn.discordapp.com/attachments/846673042893832195/887027701758722128/unknown.png">|
 
 ## Info 
 ```
@@ -25,23 +27,22 @@ Even if you are using Ubuntu the same things happens. Bruh
 Thats where the linux ricing helps..
 right now my life so pleased after a 2 months or so using my rice you can't even Imagine! Now I can say to windows user "May God mercy on yours Soul" 
 
-This is how my desktop look like and this is how it works...
+this is how my desktop look like and this is how it works...
 I use 6 workspaces (use mostly 5 anyway). Each workspaces is define for certain things like workspace-1 is define for development related stuffs, whereas workspace-2 contains only Brave browser all the time..
 similarly workspace-3 designing related stuffs (like Inkscape, PhotoGimp)
-workspace-4 Music
+workspace-4 music
 workspace-5 Discord n Reddit n Telegram
 workspace-6 Mystery box (things that I use rarely like watching Movies or web-series)
 
 At this moment I am so used to whenever I want to use browser my hands just go to `SUPER + 2` and boom there we go...
 
 Obivously you can modify this workspaces the way you want like If you want make another workspace devoted for taking notes you can simple
-One thing is pretty sure the people who are not used the keyboard as a primary input device and mouse as a secondary They r gonna hate this stuffs 
 
 These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more keybinds like increasing/decreasing size of window in floating mode
 
 |        Keybind           |                 Function                 |
 | ------------------------ | ---------------------------------------- |
-| `Super + T`              | Launch terminal (kitty)                  |
+| `Super + alt + T`        | Launch terminal (kitty)                  |
 | `Super + alt + B`        | Launch Brave                             |
 | `Super + W`              | Close window                             |
 | `Super + Space`          | Open rofi menu                           |
@@ -50,7 +51,7 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 | `Super + Ctrl +T`        | Make a floating window tiled             |
 | `Super + Ctrl + F`       | Make a tiled window floating             |
 | `Super + 1/2/3/4/5/6`    | Switch the Workspaces                    |
-| `Super + Shift + T/W`    | Switch to the Tall/Wide layout           |
+| `Super + T/W`            | Switch to the Tall/Wide layout           |
 
 Note: 1. `Super` refers to the `Win` key.
 
