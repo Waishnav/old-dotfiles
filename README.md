@@ -2,7 +2,7 @@
 ## Screenshots (BSPWM rice)
 |kitty & fish & neofetch|rofi-launcher and nvim|
 |-|-|
-|<img height="300px" src="https://cdn.discordapp.com/attachments/846673042893832195/886930186757615656/unknown.png">|<img height="300px" src="https://cdn.discordapp.com/attachments/846673042893832195/887027701758722128/unknown.png">|
+|<img height="210px" src="https://cdn.discordapp.com/attachments/846673042893832195/886930186757615656/unknown.png">|<img height="210px" src="https://cdn.discordapp.com/attachments/846673042893832195/887027701758722128/unknown.png">|
 
 ## Info 
 ```
