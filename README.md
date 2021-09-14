@@ -24,7 +24,7 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 
 |        Keybind           |                 Function                 |
 | ------------------------ | ---------------------------------------- |
-| `Super + Enter`          | Launch terminal (kitty)                  |
+| `Super + alt + t`        | Launch terminal (kitty)                  |
 | `Super + W`              | Close window                             |
 | `Super + Space`          | Open rofi menu                           |
 | `Super + H,J,K,L`        | Navigate through windows                 |
@@ -34,5 +34,5 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 | `Super + 1,2,3,4,5,6,7`  | Switch Workspaces                        |
 | `Super + alt + `
 
-Note: 1.`Toggling` means to enable if inactive or to disable if active.
-      2 `Super` refers to the `Win` key.
+Note: 1. `Super` refers to the `Win` key.
+2. I used to the keybindings to close tab in browser `ctrl + w` thats why I use `Super + w` to close any window
