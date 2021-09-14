@@ -18,7 +18,8 @@ font            JetBrains Mono Nerd Font
 ## Important Notes 
 
 <a id="keybinds"></a>
-## Keybinds 
+## Workflow & keybindings
+
 
 These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more keybinds like increasing/decreasing size of window in floating mode
 
@@ -31,7 +32,7 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 | `Super + Shift + T,W`    | Switch through layouts (tall,wide}       |
 | `Super + T`              | Make a floating window tiled             |
 | `Super + F`              | Make a tiled window floating             |
-| `Super + 1,2,3,4,5,6,7`  | Switch Workspaces                        |
+| `Super + 1,2,3,4,5,6,7`  | Switch the Workspaces                    |
 | `Super + alt + `
 
 Note: 1. `Super` refers to the `Win` key.
