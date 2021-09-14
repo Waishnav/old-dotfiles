@@ -171,12 +171,10 @@ ws-icon-2 = 3;%{F#BF616A}󰓏
 ws-icon-3 = 4;%{F#86c276}󰝚
 ;mus
 ;
-ws-icon-4 = 5;%{F#81A1C1}󰊌
+ws-icon-4 = 5;%{F#B48EAD}󰠢
 ;chat
 ;
-ws-icon-5 = 6;%{F#B48EAD}󰎁
-
-ws-icon-6 = 7;%{F#989cff}󰙴
+ws-icon-5 = 6;%{F#989cff}󰙴
 
 ;label-separator = "|"
 ;label-separator-background = ${colors.bg-alt}

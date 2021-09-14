@@ -2,12 +2,14 @@
 
 super + t
 	kitty
+super + alt + b
+        brave && bspc desktop -t fullscreen
 
 super + space
         rofi -show drun
 
-super + alt + {o, g, b, s, d, i}
-  {obs, gimp, brave, spotify, discord, inkscape}
+super + alt + {o, g, s, d, i}
+  {obs, gimp, spotify, discord, inkscape}
 
 # reload config (bspwmrc and sxhkdrc)  # 
 
@@ -43,14 +45,16 @@ super + w
 super + shift + t
         bsp-layout set tall
 
-# swithch to wide layout
+# switch to wide layout
 super + shift + w
         bsp-layout set wide
 
 # set the window state
-super + shift + {s,d,f}
-	bspc node -t {tiled,floating,fullscreen}
+super + control + {t,f}
+	bspc node -t {tiled,floating}
 
+super +  f
+        bspc node -t fullscreen
 # it make every window stack on top of each other
 super + shift + a
         bspc desktop -l next 
@@ -76,7 +80,8 @@ super + {1-7}
 
 #send window to selected desktop
 super + control + {1-7}
-        bspc node -d ^{1-7}
+        bspc node -d {1-7} 
+
 
 # focus the older or newer node in the focus history
 super + {o,i}
