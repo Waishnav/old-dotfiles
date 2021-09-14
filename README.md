@@ -11,7 +11,7 @@ de/wm           BSPWM
 bar             Polybar
 app-launcher    Rofi
 terminal        Kitty
-sh              fish
+shell           fish
 editor          nvim (learning nvim)
 font            JetBrains Mono Nerd Font
 ```
