@@ -35,4 +35,5 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 | `Super + alt + `
 
 Note: 1. `Super` refers to the `Win` key.
+
 Note: 2. I used to the keybindings to close tab in browser `ctrl + w` thats why I use `Super + w` to close any window
