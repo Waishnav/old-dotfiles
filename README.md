@@ -30,8 +30,11 @@ right now my life so pleased after a 2 months or so using my rice you can't even
 this is how my desktop look like and this is how it works...
 I use 6 workspaces (use mostly 5 anyway). Each workspaces is define for certain things like workspace-1 is define for development related stuffs, whereas workspace-2 contains only Brave browser all the time..
 similarly workspace-3 designing related stuffs (like Inkscape, PhotoGimp)
+
 workspace-4 music
+
 workspace-5 Discord n Reddit n Telegram
+
 workspace-6 Mystery box (things that I use rarely like watching Movies or web-series)
 
 At this moment I am so used to whenever I want to use browser my hands just go to `SUPER + 2` and boom there we go...
