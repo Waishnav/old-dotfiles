@@ -22,17 +22,17 @@ font            JetBrains Mono Nerd Font
 
 ## Workflow & keybindings
 I feel one of the greatest USP (Unique Selling Point) of the linux is customizablity of workflow... You can make your computer look and work exactly the way you want...
-I've used Windows in the past, the workflow was not that great as Linux provides. Like its just headach if there are more than 4 apps are opened You need to remember the where apps are locate that app then you get to work there In my opinion its just mental headach...
+I've used Windows in the past, the workflow was not that great as that of Linux provides. Like its just headach if there are more than 4 apps are opened I don't think its productive at all... 
 Even if you are using Ubuntu the same things happens. Bruh
 Thats where the linux ricing helps..
 right now my life so pleased after a 2 months or so using my rice you can't even Imagine! Now I can say to windows user "May God mercy on yours Soul" 
 
 this is how my desktop look like and this is how it works...
-I use 6 workspaces (use mostly 5 anyway). Each workspaces is define for certain things like workspace-1 is define for development related stuffs, whereas workspace-2 contains only Brave browser all the time..
-similarly workspace-3 designing related stuffs (like Inkscape, PhotoGimp)
-workspace-4 music
-workspace-5 Discord n Reddit n Telegram
-workspace-6 Mystery box (things that I use rarely like watching Movies or web-series)
+- I use 6 workspaces (use mostly 5 anyway). Each workspaces is define for certain things like workspace-1 is define for development related stuffs, whereas workspace-2 contains only Brave browser all the time..
+- similarly workspace-3 designing related stuffs (like Inkscape, PhotoGimp)
+- workspace-4 music
+- workspace-5 Discord n Reddit n Telegram
+- workspace-6 Mystery box (things that I use rarely like watching Movies or web-series)
 
 At this moment I am so used to whenever I want to use browser my hands just go to `SUPER + 2` and boom there we go...
 
