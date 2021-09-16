@@ -17,13 +17,13 @@ shell           fish
 editor          nvim (learning nvim)
 font            JetBrains Mono Nerd Font
 ```
-## Important Notes 
-
 
 ## Workflow & keybindings
+### Skip this if you are already linux user
 I feel one of the greatest USP (Unique Selling Point) of the linux is customizablity of workflow... You can make your computer look and work exactly the way you want...
 I've used Windows in the past, the workflow was not that great as that of Linux provides. Like its just headach if there are more than 4 apps are opened I don't think its productive at all... 
 Even if you are using Ubuntu the same things happens. Bruh
+I think PopOS has little bit edge here cause of it's workflow related features...
 Thats where the linux ricing helps..
 right now my life so pleased after a 2 months or so, using my rice you can't even Imagine! Now I'm like to windows user "May God mercy on yours Soul... Why are you still using crap like windows even if there are other option :p" 
 
@@ -56,3 +56,9 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 Note: 1. `Super` refers to the `Win` key.
 
 Note: 2. I used to the keybindings to close tab in browser `ctrl + w` thats why I use `Super + w` to close any window
+
+## Important Notes
+- BSPM only handles window layouts so it need extra pair of hand to manage keybindings (sxhkd)
+- I use kitty terminal emulator with JetBrains Mono Nerd Font 
+- You need to install Material Icon font so that every icons in polybar to be work fine
+- Change some values in polybar like in wlan , battery module for your wifi adapter etc , run polybar example to find out any erorrs if polybar isnt working. Also polybar takes colors from xresources file so first load xresources then run polybar.
