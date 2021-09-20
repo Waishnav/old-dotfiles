@@ -68,19 +68,6 @@ font-6 = JetBrainsMono Nerd Font:size=16;4
 font-7 = Material Design Icons:style=Bold:size=13;4
 font-8 = JetBrainsMono Nerd Font:style=Bold:size=9;3
 
-[module/text1]
-type=custom/text
-content = %{T3}󰤪 %{T-}
-content-foreground = ${colors.bg}
-content-background = #BF616A
-
-[module/text2]
-type=custom/text
-content = 󰂯
-content-font = 1
-content-foreground = ${colors.bg}
-content-background = #BF616A
-
 [module/space-c1]
 type = custom/text
 content = %{T1} %{T-}
@@ -265,7 +252,7 @@ format-volume-padding = 1
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = ens33
 interval = 3.0
 format-connected =  <label-connected>
 label-connected = "󰤪 "
@@ -372,8 +359,6 @@ label-disconnected-font = 6
 label-disconnected-foreground = ${colors.fg}
 label-connected-background = ${colors.bg-alt}
 label-connected-foreground = ${colors.green}
-
-click-left = applet_backlight
 
 [module/powermenu]
 type = custom/menu

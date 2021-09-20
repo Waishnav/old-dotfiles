@@ -58,7 +58,7 @@ Note: 1. `Super` refers to the `Win` key.
 Note: 2. I used to the keybindings to close tab in browser `ctrl + w` thats why I use `Super + w` to close any window
 
 ## Important Notes
-- BSPM only handles window layouts so it need extra pair of hand to manage keybindings (sxhkd)
+- BSPWM only handles window layouts so it need extra pair of hand to manage keybindings (sxhkd)
 - I use kitty terminal emulator with JetBrains Mono Nerd Font 
 - You need to install Material Icon font so that every icons in polybar to be work fine
-- Change some values in polybar like in wlan , battery module for your wifi adapter etc , run polybar example to find out any erorrs if polybar isnt working. Also polybar takes colors from xresources file so first load xresources then run polybar.
+- Change some values in polybar like in wlan , battery module for your wifi adapter etc , run polybar example to find out any erorrs if polybar isnt working.
