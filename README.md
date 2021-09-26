@@ -1,8 +1,8 @@
 # Don't skip the README
 ## Screenshots (BSPWM rice)
-kitty & fish & neofetch 
+`kitty & fish & neofetch` 
 <img src="https://cdn.discordapp.com/attachments/846673042893832195/886930186757615656/unknown.png" align="center">
-rofi-launcher and nvim
+`rofi-launcher and nvim`
 <img src="https://cdn.discordapp.com/attachments/846673042893832195/887027701758722128/unknown.png" align="center">
 
 ## Info 
@@ -60,6 +60,8 @@ Note: 2. I used to the keybindings to close tab in browser `ctrl + w` thats why 
 
 ## Important Notes
 - BSPWM only handles window layouts so it need extra pair of hand to manage keybindings (sxhkd)
-- I use kitty terminal emulator with JetBrains Mono Nerd Font 
+- I use kitty as my terminal with JetBrains Mono Nerd Font 
 - You need to install Material Icon font so that every icons in polybar to be work fine
 - Change some values in polybar like in wlan , battery module for your wifi adapter etc , run polybar example to find out any erorrs if polybar isnt working.
+
+## Installation 

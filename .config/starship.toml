@@ -13,13 +13,16 @@ min_time = 2_000
  
 # Set success and error characters
 [character]
-success_symbol = "[>](bold red)[>](bold yellow)[>](bold green)"
+success_symbol = "[❯](bold red)[❯](bold yellow)[❯](bold green)"
 error_symbol = "[✗✗✗](bold red)"  
  
 # Set directory symbol
 [directory]
 truncation_length = 5
-format = "[ ](bold cyan) [$path]($style)[$lock_symbol]($lock_style) "
+format = "[  ](bold cyan) [$path]($style) "
 style = "bold cyan"
 read_only = "󰌾"
 read_only_style= "bold red"
+
+[python]
+symbol = "  "
