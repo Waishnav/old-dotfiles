@@ -1,14 +1,14 @@
 #  ------ programs  -------- # 
 
-super + t
+alt + t
 	kitty
-super + alt + b
+alt + b
         brave && bspc desktop -t fullscreen
 
 super + space
         rofi -show drun
 
-super + alt + {o, g, s, d, i}
+alt + {o, g, s, d, i}
   {obs, gimp, spotify, discord, inkscape}
 
 # reload config (bspwmrc and sxhkdrc)  # 

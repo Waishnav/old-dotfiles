@@ -37,17 +37,17 @@ active-light = #313435
 tray-position = right
 dpi = 98
 monitor = Virtual-1
-width =  99%
+width =  100%
 height = 25
 padding-left =0
 padding-right =0
-offset-x = 7
-offset-y = 5 
+offset-x = 0
+offset-y = 0 
 background = ${colors.bg}
 foreground = ${colors.fg}
 bottom = false
 border-top-size = 5
-border-bottom-size = 5
+border-bottom-size = 6
 border-top-color = ${colors.bg}
 border-bottom-color = ${colors.bg}
 
@@ -55,18 +55,18 @@ line-size = 3
 wm-restack = bspwm
 
 modules-left = bspwm round-right-c1 xwindow
-modules-center = space-c2 round-left-c1 time round-right-c1
-modules-right = wlan round-left-c1 network round-left-c2 cpu space-c2 round-left-c1 mem space-c1 round-left-c2 powermenu space-c2 space-c2
+modules-center = round-left-c1 time round-right-c1 
+modules-right = round-left-c1 network round-left-c2 cpu space-c2 round-left-c1 mem space-c1 round-left-c2 wlan powermenu space-c2 space-c2
 
 font-0 = JetBrains Mono Nerd Font:style=Bold:pixelsize=11;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
-font-2 = Material Design Icons:style=Bold:size=14;3
+font-2 = Material Design Icons:style=Bold:size=13;3
 font-3 = JetBrains Mono Nerd Font:style=Bold:size=12;3
 font-4 = JetBrainsMono Nerd Font:size=15;4
 font-5 = JetBrainsMono Nerd Font:style=Bold:size=10;3
 font-6 = JetBrainsMono Nerd Font:size=16;4
-font-7 = Material Design Icons:style=Bold:size=13;4
-font-8 = JetBrainsMono Nerd Font:style=Bold:size=9;3
+font-7 = JetBrainsMono Nerd Font:style=Bold:size=9;3
+font-8 = Material Design Icons:style=Bold:size=12;2
 
 [module/space-c1]
 type = custom/text
@@ -142,7 +142,7 @@ type = internal/bspwm
 
 pin-workspaces = true
 inline-mode = false
-enable-click = false
+enable-click = true
 enable-scroll = false
 reverse-scroll = false
 
@@ -192,7 +192,7 @@ label-urgent-padding = 1
 [module/xwindow]
 type = internal/xwindow
 label = %title%
-label-font = 9
+label-font = 8
 label-maxlen = 18
 format-foreground = ${colors.fg}
 format-background = ${colors.bg}
@@ -205,20 +205,19 @@ format = <label>
 ;format-background = ${colors.bg-alt}
 date = %{F#adb1b9}%{B#33363d}%{T8}󰥔 %{T-}%H:%M%{F-} 
 time-alt = %{F#adb1b9}%{B#33363d}%{T8}󰃭 %{T-}%a, %b %d%{F-}
-format-font=6
 label = %time%%date%
 
 [module/alsa]
 type = internal/alsa
 format-volume = <label-volume> <bar-volume>
-label-volume = "󰤪"
+label-volume = ""
 label-volume-foreground = ${colors.bg}
 label-volume-background = #BF616A
 format-muted-foreground = ${colors.fg}
 label-muted = ""
 
 format-muted-padding = 2
-;format-muted-background = ${colors.bg-alt}
+format-muted-background = ${colors.bg-alt}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #61afef
@@ -240,23 +239,16 @@ bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.fg}
 format-volume-padding = 1
 
-;[module/updates]
-;type = custom/script
-;exec = doas xbps-install -S > /dev/null 2>&1; xbps-updates
-;format = <label>
-;interval = 4600 
-;label =  %output%  
-;label-padding = 2
-;label-foreground = #BF616A
-
-
 [module/wlan]
 type = internal/network
-interface = ens33
+interface = ens33 
 interval = 3.0
 format-connected =  <label-connected>
 label-connected = "󰤪 "
-label-connected-foreground = #A3BE8C 
+label-connected-font = 9
+label-connected-foreground = #8f939c 
+label-disconnected = "󰤠 "
+label-disconnected-foreground = #8f939c
 
 [module/battery]
 type = internal/battery
@@ -330,7 +322,7 @@ format-prefix-font = 5
 format = <label> 
 
 label = CPU %percentage%%
-;label-font = 6
+label-font = 8
 
 format-background = ${colors.bg}
 format-foreground = ${colors.violet2}
@@ -342,7 +334,7 @@ format-prefix = "  "
 format-prefix-font = 4
 format = <label>
 label = %output% MB
-;label-font = 6
+label-font = 8
 ;label-padding = 1
 format-background = ${colors.bg-alt}
 format-foreground = ${colors.orange}
@@ -351,14 +343,22 @@ format-foreground = ${colors.orange}
 type = internal/network
 interface = ens33
 interval = 0.6
-label-connected = "󰤪  %upspeed% 󰯎 %downspeed% "
-label-connected-font = 6
-label-disconnected = " 󰤠  "
-label-disconnected-background = ${colors.bg-alt}
-label-disconnected-font = 6
-label-disconnected-foreground = ${colors.fg}
+label-connected = "%upspeed% 󰯎 %downspeed% "
+label-connected-font = 8
 label-connected-background = ${colors.bg-alt}
 label-connected-foreground = ${colors.green}
+
+click-left = applet_backlight
+
+[module/bluetooth]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/bluetooth.sh
+tail = true
+click-left = ~/.config/polybar/polybar-scripts/bluetooth.sh --toggle &
+format-foreground = ${colors.fg}
+format-background = ${colors.bg}
+format-overline = ${colors.bg}
+format-underline = ${colors.bg}
 
 [module/powermenu]
 type = custom/menu
