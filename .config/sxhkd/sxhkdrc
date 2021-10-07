@@ -4,6 +4,8 @@ alt + t
 	kitty
 alt + b
         brave && bspc desktop -t fullscreen
+alt + f
+        firefox 
 
 super + space
         rofi -show drun
@@ -14,14 +16,11 @@ alt + {o, g, s, d, i}
 # reload config (bspwmrc and sxhkdrc)  # 
 
 super + shift + r
-	pkill -USR1 -x sxhkd
-
-super + shift + e
-        bspc wm -r
+	pkill -USR1 -x sxhkd && bspc wm -r
 
 #dmenu
 super + ctrl + d
-  dmenu_run -fn 
+        dmenu_run -fn 
 
 #  ------ brightness  -------i- # 
 
