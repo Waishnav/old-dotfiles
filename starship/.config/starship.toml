@@ -13,7 +13,7 @@ min_time = 2_000
  
 # Set success and error characters
 [character]
-success_symbol = "[ ❯](bold red)[❯](bold yellow)[❯](bold green)"
+success_symbol = "[ ❱](bold red)[❱](bold yellow)[❱](bold green)"
 error_symbol = "[ ✗✗✗](bold red)"  
  
 # Set directory symbol
