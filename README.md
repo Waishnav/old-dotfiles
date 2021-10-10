@@ -43,8 +43,8 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 
 |        Keybind           |                 Function                 |
 | ------------------------ | ---------------------------------------- |
-| `Super + alt + T`        | Launch terminal (kitty)                  |
-| `Super + alt + B`        | Launch Brave                             |
+| `alt + T`                | Launch terminal (kitty)                  |
+| `alt + B`                | Launch Brave                             |
 | `Super + W`              | Close window                             |
 | `Super + Space`          | Open rofi menu                           |
 | `Super + H/J/K/L`        | Navigate through windows                 |
