@@ -12,30 +12,30 @@ picom &
 ~/.config/polybar/launch.sh &
 
 #wallpaper and nvim
-feh --bg-fill ~/Pictures/wallpapers/mate.png
+feh --bg-fill ~/Images/wallpapers/joker.jpg
 
 #global settings
-bspc config automatic_scheme alternate
-bspc config initial_polarity second_child
-bspc config pointer_modifier lock
-bspc config pointer_action1 move
-bspc config pointer_action2 resize_side
-bspc config pointer_action3 resize_corner
-bspc config remove_disabled_monitors true
-bspc config remove_unplugged_monitors true
-bspc config merge_overlapping_monitors true
+#bspc config automatic_scheme alternate
+#bspc config initial_polarity second_child
+#bspc config pointer_modifier lock
+#bspc config pointer_action1 move
+#bspc config pointer_action2 resize_side
+#bspc config pointer_action3 resize_corner
+#bspc config remove_disabled_monitors true
+#bspc config remove_unplugged_monitors true
+#bspc config merge_overlapping_monitors true
 
 
 # workspaces 
 bspc monitor LVDS-1 -d 1 2 3 4 5 6
-#bspc monitor HDMI-1 -d 7 8 9
+bspc monitor HDMI-1 -d 7 8 
 
 bspc config focus_follows_pointer false
 
-bspc config top_padding 36 
+bspc config top_padding 42 
 
 # borders
-bspc config focused_border_color "#ffc145"
+bspc config focused_border_color "#797d85"
 bspc config normal_border_color "#373a3b"
 bspc config border_width  2
 bspc config borderless_monocle true
@@ -45,7 +45,6 @@ bspc config gapless_monocle false
 bspc config window_gap 5
 bspc config split_ratio 0.50
 
-bspc rule -a Gimp desktop='^3'
+bspc rule -a gimp-2.10 desktop='^3'
 bspc rule -a Inkscape desktop='^3'
 bspc rule -a Brave-browser desktop='^2'state=fullscreen
-bspc rule -a discord desktop='^5'

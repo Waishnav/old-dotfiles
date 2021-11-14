@@ -3,9 +3,9 @@
 alt + t
 	kitty
 alt + b
-        brave && bspc desktop -t fullscreen
+        brave 
 alt + f
-        firefox 
+        nemo 
 
 super + space
         rofi -show drun
@@ -15,14 +15,10 @@ alt + {o, g, s, d, i}
 
 # reload config (bspwmrc and sxhkdrc)  # 
 
-super + shift + r
+super + ctrl + r
 	pkill -USR1 -x sxhkd && bspc wm -r
 
-#dmenu
-super + ctrl + d
-        dmenu_run -fn 
-
-#  ------ brightness  -------i- # 
+#  ------ brightness  -------- # 
 
 XF86MonBrightnessUp
     xbacklight -inc 10
@@ -47,6 +43,9 @@ super + shift + t
 # switch to wide layout
 super + shift + w
         bsp-layout set wide
+
+super + shift + d
+        bsp-layout set default
 
 # set the window state
 super + control + {t,f}
@@ -74,13 +73,28 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {1-7}
-	bspc desktop -f {1-7}
+super + {1-9}
+	bspc desktop -f {1-9}
 
 #send window to selected desktop
-super + control + {1-7}
-        bspc node -d {1-7} 
-
+alt + 1
+        bspc node -d 1 && bspc desktop -f 1
+alt + 2 
+        bspc node -d 2 && bspc desktop -f 2 
+alt + 3 
+        bspc node -d 3 && bspc desktop -f 3
+alt + 4
+        bspc node -d 4 && bspc desktop -f 4
+alt + 5
+        bspc node -d 5 && bspc desktop -f 5
+alt + 6
+        bspc node -d 6 && bspc desktop -f 6
+alt + 7
+        bspc node -d 7 && bspc desktop -f 7
+alt + 8
+        bspc node -d 8 && bspc desktop -f 8
+alt + 9
+        bspc node -d 9 && bspc desktop -f 9
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -109,11 +123,11 @@ super + {Left,Down,Up,Right}
 #fullscreen screenshot save
 
 super + shift + p
-     maim "~/Images/$(date)"
+     maim "~/Pictures/$(date)"
 
 #cropped save
 super + shift + x
-      maim --select "~/Images/$(date)"
+      maim --select "~/Pictures/$(date)"
 
 #  clipboard fullscreen
 super + u
