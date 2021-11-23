@@ -17,56 +17,90 @@
 ;==========================================================
 
 [colors]
-bg = #1c1f26
+bg = #202124
+#1c1e27
 fg = #adb1b9   
-bg-alt = #33363d 
+fg-alt = #D8DEE9
+bg-alt = #383a3d 
 skyblue = #88C0D0
 blue = #81A1C1
-red = #e06c75
-yellow = #EBCB8B
+red = #E06c75
+yellow = #E5C07B
 orange = #d19a66
-green = #86c276
+green = #98C379
 violet1 = #B48EAD
 violet2 = #989cff
-
 
 dark-light = #272A2B 
 active-light = #313435
 
 [bar/example]
-tray-position = right
-dpi = 98
-monitor = Virtual-1
+dpi = 90
+monitor = LVDS-1
 width =  99%
 height = 25
 padding-left =0
 padding-right =0
 offset-x = 7
-offset-y = 5 
+offset-y = 5
 background = ${colors.bg}
 foreground = ${colors.fg}
 bottom = false
 border-top-size = 5
 border-bottom-size = 5
-border-top-color = ${colors.bg}
-border-bottom-color = ${colors.bg}
+border-top-color = ${colors.bg} 
+border-bottom-color = ${colors.bg} 
 
 line-size = 3
 wm-restack = bspwm
 
-modules-left = bspwm round-right-c1 xwindow
-modules-center = space-c2 round-left-c1 time round-right-c1
-modules-right = wlan round-left-c1 network round-left-c2 cpu space-c2 round-left-c1 mem space-c1 round-left-c2 powermenu space-c2 space-c2
+modules-left = space-c2 bspwm round-right-c1 xwindow
+modules-center = cpu space-c2 round-left-c1 time round-right-c1 space-c2 mem
+modules-right = round-left-c1 network round-left-c2 wlan pulseaudio round-left-c1 powermenu space-c2 
 
-font-0 = JetBrains Mono Nerd Font:style=Bold:pixelsize=11;3
-font-1 = JetBrainsMono Nerd Font:size=18;5
-font-2 = Material Design Icons:style=Bold:size=14;3
+
+font-0 = JetBrains Mono Nerd Font:style=Bold:pixelsize=12;3
+font-1 = JetBrainsMono Nerd Font:size=18;4
+font-2 = Material Design Icons:style=Bold:size=14;4
 font-3 = JetBrains Mono Nerd Font:style=Bold:size=12;3
 font-4 = JetBrainsMono Nerd Font:size=15;4
 font-5 = JetBrainsMono Nerd Font:style=Bold:size=10;3
 font-6 = JetBrainsMono Nerd Font:size=16;4
-font-7 = Material Design Icons:style=Bold:size=13;4
+font-7 = Material Design Icons:style=Bold:size=13;2
 font-8 = JetBrainsMono Nerd Font:style=Bold:size=9;3
+font-9 = unifont:fontformat=truetype:size=9;3
+
+[bar/example_extrnl]
+bottom = false
+monitor = HDMI-1
+width =  100%
+height = 25
+padding-left =0
+padding-right =0
+offset-x = 0
+offset-y = 0 
+background = ${colors.bg}
+foreground = ${colors.fg}
+border-top-size = 4
+border-bottom-size = 4
+border-top-color = ${colors.bg} 
+border-bottom-color = ${colors.bg} 
+
+line-size = 3
+wm-restack = bspwm
+
+modules-left = bspwm round-right-c1
+modules-center = round-left-c1 time round-right-c1
+modules-right = cpu space-c2 space-c2 mem space-c2 space-c2 
+
+font-0 = JetBrains Mono Nerd Font:style=Bold:pixelsize=11;2
+font-1 = JetBrainsMono Nerd Font:size=18;4
+font-2 = Material Design Icons:style=Bold:size=14;4
+font-3 = JetBrains Mono Nerd Font:style=Bold:size=12;3
+font-4 = JetBrainsMono Nerd Font:size=15;4
+font-5 = JetBrainsMono Nerd Font:style=Bold:size=10;3
+font-6 = JetBrainsMono Nerd Font:size=16;4
+font-7 = Material Design Icons:style=Bold:size=13;5
 
 [module/space-c1]
 type = custom/text
@@ -76,42 +110,48 @@ content-background = ${colors.bg-alt}
 [module/space-c2]
 type = custom/text
 content = %{T1} %{T-}
-content-background = #1c1f26
+content-background = ${colors.bg}
 
 [module/round-left-c1]
 type = custom/text
 content = %{T2}%{T-}
 content-foreground = ${colors.bg-alt}
-content-background = #1c1f26
+content-background = ${colors.bg}
 
 [module/round-left-c2]
 type = custom/text
 content = %{T2}%{T-}
-content-foreground = #1c1f26
+content-foreground = ${colors.bg}
+
 content-background = ${colors.bg-alt}
 
 [module/round-right-c1]
 type = custom/text
 content = %{T2}%{T-}
 content-foreground = ${colors.bg-alt}
-content-background = #1c1f26
+content-background = ${colors.bg}
 
 [module/round-right-c2]
 type = custom/text
 content = %{T2}%{T-}
-content-foreground = #1c1f26
+content-foreground = ${colors.bg}
 content-background = ${colors.bg-alt}
 
 [module/round-left-c3]
 type = custom/text
 content = %{T5}%{T-}
 content-foreground = #BF616A
-content-background = #1c1f26
+content-background = ${colors.bg}
 
 [module/round-left-c4]
 type = custom/text
 content = %{T2}%{T-}
 content-background = #BF616A
+content-foreground = ${colors.bg-alt}
+
+[module/separator]
+type = custom/text
+content = %{T2}|%{T-}
 content-foreground = ${colors.bg-alt}
 
 [module/polywins]
@@ -123,19 +163,21 @@ label = %output%
 label-padding = 0
 tail = true
 
-;[module/temperature]
-;type = internal/temperature
-;thermal-zone = 0
-;warn-temperature = 70
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 70
 
-;format = <ramp> <label>
-;format-warn = <ramp> <label-warn>
-;format-padding = 0
-;label = %temperature%
-;label-warn = %temperature%
-;ramp-0 =  "󰜗" 
-;ramp-foreground = #a4ebf3
-;label-padding-right = 1
+format = < space-c2 space-c2 space-c2ramp><label>
+format-warn = <ramp><label-warn>
+format-padding = 0
+label = %temperature%
+label-warn = %temperature%
+ramp-0 =  "󰜗 " 
+ramp-foreground = #a4ebf3
+ramp-background = ${colors.bg-alt}
+label-padding-right = 1
+label-background = ${colors.bg-alt}
 
 [module/bspwm]
 type = internal/bspwm
@@ -162,6 +204,13 @@ ws-icon-4 = 5;%{F#B48EAD}󰠢
 ;chat
 ;
 ws-icon-5 = 6;%{F#989cff}󰙴
+
+ws-icon-6 = 7;%{F#98C379}
+
+ws-icon-7 = 8;%{F#98C379}
+
+ws-icon-8 = 9;%{F#98C379}
+
 
 ;label-separator = "|"
 ;label-separator-background = ${colors.bg-alt}
@@ -203,21 +252,20 @@ type = internal/date
 interval = 60
 format = <label>
 ;format-background = ${colors.bg-alt}
-date = %{F#adb1b9}%{B#33363d}%{T8}󰥔 %{T-}%H:%M%{F-} 
-time-alt = %{F#adb1b9}%{B#33363d}%{T8}󰃭 %{T-}%a, %b %d%{F-}
-format-font=6
+date = %{F#adb1b9}%{B#383a3d}%{T8}󰥔 %{T-}%H:%M%{F-} 
+time-alt = %{F#adb1b9}%{B#383a3d}%{T8}󰃭 %{T-}%a, %b %d%{F-}
+format-font= 6
 label = %time%%date%
 
 [module/alsa]
 type = internal/alsa
 format-volume = <label-volume> <bar-volume>
-label-volume = "󰤪"
-label-volume-foreground = ${colors.bg}
-label-volume-background = #BF616A
+label-volume = "󰕾"
+label-volume-foreground =  
+;label-volume-background = #BF616A
 format-muted-foreground = ${colors.fg}
-label-muted = ""
+label-muted = " 󰖁"
 
-format-muted-padding = 2
 ;format-muted-background = ${colors.bg-alt}
 
 bar-volume-width = 10
@@ -234,35 +282,25 @@ bar-volume-indicator-foreground = #61afef
 bar-volume-indicator-font = 2
 bar-volume-fill = ━ 
 bar-volume-fill-foreground = #61afef
-bar-volume-fill-font = 2
+bar-volume-fill-font = 9
 bar-volume-empty = ━
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.fg}
 format-volume-padding = 1
 
-;[module/updates]
-;type = custom/script
-;exec = doas xbps-install -S > /dev/null 2>&1; xbps-updates
-;format = <label>
-;interval = 4600 
-;label =  %output%  
-;label-padding = 2
-;label-foreground = #BF616A
-
-
 [module/wlan]
 type = internal/network
-interface = ens33
-interval = 3.0
+interface = wlan0
+interval = 2.0
 format-connected =  <label-connected>
 label-connected = "󰤪 "
-label-connected-foreground = #A3BE8C 
+label-connected-foreground = ${colors.green} 
 
 [module/battery]
 type = internal/battery
-battery = BAT0
-adapter = AC0
-full-at = 98
+battery = BAT1
+adapter = ACAD
+full-at = 100
 
 format-charging = <animation-charging> <label-charging>
 label-charging = %percentage%%
@@ -271,7 +309,7 @@ format-charging-padding = 1
 format-charging-foreground = ${colors.color4}
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = %percemtage%%
+label-discharging = %percentage%%
 
 format-discharging-foreground = ${colors.fg}
 
@@ -286,40 +324,55 @@ label-discharging-foreground = ${colors.fg}
 ramp-capacity-foreground =  #A0E8A2  
 label-charging-foreground = ${colors.fg}
 
-ramp-capacity-0 = "  " 
-ramp-capacity-1 = "  " 
-ramp-capacity-2 = "  " 
-ramp-capacity-3 = "  " 
-ramp-capacity-4 = "  "
+ramp-capacity-0 = " " 
+ramp-capacity-1 = " " 
+ramp-capacity-2 = " " 
+ramp-capacity-3 = " " 
+ramp-capacity-4 = " "
 
-animation-charging-0 = "  " 
-animation-charging-1 = "  " 
-animation-charging-2 = "  " 
-animation-charging-3 = "  " 
-animation-charging-4 = "  "
+animation-charging-0 = " " 
+animation-charging-1 = " " 
+animation-charging-2 = " " 
+animation-charging-3 = " " 
+animation-charging-4 = " "
 
 animation-charging-foreground = #DF8890
-animation-charging-framerate = 910 
-format-discharging-padding = 1
+animation-charging-framerate = 750
+format-dischjrging-padding = 1
 
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_03_00.6.analog-stereo
+use-ui-max = false
+interval = 5
 
-[module/volume]
-type = custom/script
-exec = amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]'
+format-volume-prefix = "󰕾 " 
+#format-volume-prefix-font = 8
+format-volume-prefix-foreground = #61afef 
+format-volume = "<label-volume>"
+format-volume-foreground = ${colors.fg-alt}
+format-volume-background = ${colors.bg}
+format-volume-padding = 1
+
+format-muted = "󰝟"
+format-muted-foreground = ${colors.violet1}
+format-muted-background = ${colors.bg}
+format-muted-padding = 1
+
+label-volume = %percentage%%
+label-muted = " Muted"
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+use-actual-brightness = true
 format = <label>
-internal = 5.0
-label = %output% 
-label-foreground = #BF616A
-label-padding = 1
-
-[module/xbacklight]
-type = internal/xbacklight
-format = <label>
-format-prefix = " "
-label = %percentage%
+format-prefix = "󰃟 "
+format-prefix-font = 8
+label = %percentage% 
 format-prefix-foreground = #61afef
-label-foreground =   #D8DEE9
-format-padding = 1
+label-foreground = ${colors.fg-alt}
+;format-padding = 1
 
 [module/cpu]
 type = internal/cpu
@@ -333,7 +386,7 @@ label = CPU %percentage%%
 ;label-font = 6
 
 format-background = ${colors.bg}
-format-foreground = ${colors.violet2}
+format-foreground = #989cff
 
 [module/mem]
 type = custom/script
@@ -344,39 +397,46 @@ format = <label>
 label = %output% MB
 ;label-font = 6
 ;label-padding = 1
-format-background = ${colors.bg-alt}
+;format-background = ${colors.bg-alt}
 format-foreground = ${colors.orange}
 
 [module/network]
 type = internal/network
-interface = ens33
+interface = wlan0 
 interval = 0.6
-label-connected = "󰤪  %upspeed% 󰯎 %downspeed% "
+label-connected-prefix = "󰤪 "
+label-connected-prefix-foreground = ${colors.green}
+label-connected = " %upspeed% 󰯎 %downspeed% "
 label-connected-font = 6
-label-disconnected = " 󰤠  "
+label-disconnected = "󰤠 "
 label-disconnected-background = ${colors.bg-alt}
 label-disconnected-font = 6
 label-disconnected-foreground = ${colors.fg}
 label-connected-background = ${colors.bg-alt}
-label-connected-foreground = ${colors.green}
+label-connected-foreground = ${colors.yellow}
 
 [module/powermenu]
 type = custom/menu
 expand-right = false
 format-spacing = 1
-
-label-open = 
+format-spacing-background = ${colors.bg-alt}
+label-open =  .
 label-open-foreground = #e06c75
+label-open-background = ${colors.bg-alt}
+label-open-font = 4
 label-open-padding = 0
-label-close = 
+label-close =  .
 label-close-foreground = #e06c75
-;${colors.bg}
+label-close-background = ${colors.bg-alt}
 
 label-close-padding = 0
 label-close-padding-background = #3B4252
 label-separator = " "
+label-separator-background = ${colors.bg-alt}
 
 menu-0-0 = 
+menu-0-0-background = ${colors.bg-alt}
 menu-0-0-exec = sudo shutdown now
 menu-0-1 = 
-menu-0-1-exec = sudo reboot now
+menu-0-1-background = ${colors.bg-alt}
+menu-0-1-exec = reboot now

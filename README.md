@@ -65,3 +65,12 @@ Note: 2. I used to the keybindings to close tab in browser `ctrl + w` thats why 
 - Change some values in polybar like in wlan , battery module for your wifi adapter etc , run polybar example to find out any erorrs if polybar isnt working.
 
 ## Installation 
+Firstly clone this repo by following cmd and cd into dotfiles
+```bash
+$ git clone https://github.com/Waishnav/dotfiles.git --branch main --single-branch
+$ cd ./dotfiles
+$ cp .config ~/
+$ sudo cp ./fonts/* /usr/share/fonts/ && sudo fc-cache -f -v
+```
+## Todo
+- [ ] Documenting Installtion
