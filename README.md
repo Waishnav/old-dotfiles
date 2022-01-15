@@ -1,9 +1,7 @@
 # Don't skip the README
 ## Screenshots (BSPWM rice)
 `kitty & fish & neofetch` 
-<img src="https://cdn.discordapp.com/attachments/846673042893832195/886930186757615656/unknown.png" align="center">
-`rofi-launcher and conky and neofetch`
-<img src="https://cdn.discordapp.com/attachments/846673042893832195/931088611821113354/unknown.png" align="center">
+<img src="https://raw.githubusercontent.com/Waishnav/dotfiles/main/screenshots/rofi_conky_pacman.png" align="center">
 
 ## Info 
 ```
