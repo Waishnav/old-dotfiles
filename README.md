@@ -2,8 +2,8 @@
 ## Screenshots (BSPWM rice)
 `kitty & fish & neofetch` 
 <img src="https://cdn.discordapp.com/attachments/846673042893832195/886930186757615656/unknown.png" align="center">
-`rofi-launcher and nvim`
-<img src="https://cdn.discordapp.com/attachments/846673042893832195/887027701758722128/unknown.png" align="center">
+`rofi-launcher and conky and neofetch`
+<img src="https://cdn.discordapp.com/attachments/846673042893832195/931088611821113354/unknown.png" align="center">
 
 ## Info 
 ```
@@ -20,16 +20,16 @@ font            JetBrains Mono Nerd Font
 ```
 
 ## Workflow & keybindings
-### Skip this if you are already linux user
+### Skip this if you are already into linux ricing
 I feel one of the greatest USP (Unique Selling Point) of the linux is customizablity of workflow... You can make your computer look and work exactly the way you want...
-I've used Windows in the past, the workflow was not that great as that of Linux provides. Like its just headach if there are more than 4 apps are opened I don't think its productive at all... 
+I've used Windows in the past, the workflow was not that great as that of Linux provides. Like its just headach if there are more than 6 apps are opened ( you have to remember visually where is that window is located ) I don't think its productive at all... 
 Even if you are using Ubuntu the same things happens. Bruh
-I think PopOS has little bit edge here cause of it's workflow related features...
+I think PopOS has little bit edge here cause of it's workflow related features like tiled windows...
 Thats where the linux ricing helps..
-right now my life so pleased after a 2 months or so, using my rice you can't even Imagine! Now I'm like to windows user "May God mercy on yours Soul... Why are you still using crap like windows even if there are other option :p" 
+right now my life so pleased after a 2 months or so, using my rice you can't even Imagine! Now I'm like (to windows user) "May God mercy on yours Soul... Why are you still using crap like windows even if there are other option :p" 
 
 this is how my desktop look like and this is how it works...
-- I use 6 workspaces (use mostly 5 anyway). Each workspaces is define for certain things like workspace-1 is define for development related stuffs, whereas workspace-2 contains only Brave browser all the time..
+- I use 6 workspaces (use mostly 5 anyway). Each workspaces is define for certain things like workspace-1 is define for development/Programming related stuffs, whereas workspace-2 contains only Brave browser all the time..
 - similarly workspace-3 designing related stuffs (like Inkscape, PhotoGimp)
 - workspace-4 music
 - workspace-5 Discord n Reddit n Telegram
@@ -49,10 +49,10 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 | `Super + Space`          | Open rofi menu                           |
 | `Super + H/J/K/L`        | Navigate through windows                 |
 | `Super + Shift + T/W`    | Switch through layouts (tall,wide}       |
-| `Super + Ctrl +T`        | Make a floating window tiled             |
-| `Super + Ctrl + F`       | Make a tiled window floating             |
+| `Super + T`              | Make a floating window tiled             |
+| `Super + F`              | Make a tiled window floating             |
 | `Super + 1/2/3/4/5/6`    | Switch the Workspaces                    |
-| `Super + T/W`            | Switch to the Tall/Wide layout           |
+| `Super + Shift + T/W`    | Switch to the Tall/Wide layout           |
 
 Note: 1. `Super` refers to the `Win` key.
 
@@ -74,3 +74,4 @@ $ sudo cp ./fonts/* /usr/share/fonts/ && sudo fc-cache -f -v
 ```
 ## Todo
 - [ ] Documenting Installtion
+- [ ] macOS/Windows style window switching (alt+tab)

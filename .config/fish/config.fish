@@ -16,6 +16,8 @@ bind -M insert -m default kj backward-char force-repaint
 #fish_add_path ~/.cargo/bin
 #fish_add_path /usr/lib/ruby/gems/3.0.0/bin
 
+alias nvm="nvim"
+
 set fish_greeting
 
 starship init fish | source
