@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# disabling laptop keyboard
+xinput float 15
+
 #autostart apps
 pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -27,12 +30,12 @@ picom &
 # workspaces
 displayport="$(xrandr --query | grep -o "HDMI-1 connected" | cut -d " " -f 1)"
 if [ -n "$displayport" ]; then
-  bspc monitor LVDS-1 -d 1 2 3 4 5 6
+  bspc monitor LVDS-1 -d 1 2 3 4 5
   bash ~/.screenlayout/display_profile.sh
-  bspc monitor HDMI-1 -d 7 8
+  bspc monitor HDMI-1 -d 6 7
   #xrandr --output LVDS-1 --off --output HDMI-1 --primary --mode 1366x768 --pos 0x0 -- rotate normal
 else
-  bspc monitor LVDS-1 -d 1 2 3 4 5 6
+  bspc monitor LVDS-1 -d 1 2 3 4 5
   bash ~/.screenlayout/normal_profile.sh
 fi
 
@@ -54,18 +57,22 @@ bspc config window_gap 5
 bspc config split_ratio 0.50
 
 bspc rule -a Brave-browser desktop='^2'
-bspc rule -a "crx_nbkckgmfajchmnkaohdmmokgimjkhblc" desktop='^3' state=floating
-bspc rule -a notion-app desktop='^3'
+bspc rule -a notion-app desktop='^3' state=floating
 bspc rule -a audacity desktop='^4'
 bspc rule -a Gimp-2.10 desktop='^4'
 bspc rule -a Inkscape desktop='^4'
 bspc rule -a steam desktop='^5'
 bspc rule -a discord desktop='^5'
-bspc rule -a zoom desktop='^6' state=floating follow=on
+bspc rule -a zoom desktop='^5' state=floating follow=on
 bspc rule -a Nemo state=floating follow=on
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Rofi state=floating
 bspc rule -a TelegramDesktop state=floating
+bspc rule -a Blueberry.py state=floating
+bspc rule -a File-roller state=floating
+bspc rule -a "Picture in picture" state=floating
+
+
 
 pgrep bspswallow || bspswallow &
 
@@ -74,6 +81,7 @@ pgrep bspswallow || bspswallow &
 #XDG_SESSION_TYPE=X11 plank
 
 #wallpaper and nvim
-feh --bg-fill ~/Images/wallpapers/ign_legendary.png
-killalli conky
+feh --bg-fill ~/Images/wallpapers/karsten-wurth-karsten-wuerth-7BjhtdogU3A-unsplash.jpg
+killall conky & killall screenkey
 conky
+screenkey

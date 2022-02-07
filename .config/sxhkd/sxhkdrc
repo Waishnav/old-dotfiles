@@ -1,18 +1,24 @@
 #  ------ programs  -------- #
 super + space
-    rofi -show drun
+    bash ~/.config/rofi/apps.sh
+    #rofi -no-lazy-grab -show drun -theme ~/.config/rofi/blurry2.rasi
+alt + Tab
+    bash ~/.config/rofi/window-switcher/window-switcher.sh
 
-alt + tab
-    rofi -show window
-
+alt + l
+    bash ~/.config/rofi/window-switcher/window-switcher.sh
 alt + {v+s, t, b, f, n, o, g, s, d, i, z}
   {code, kitty, brave, nemo, notion-app, obs, gimp, spotify, discord, inkscape, zoom}
-
 # reload config (bspwmrc and sxhkdrc)  #
+
+super + p
+    bash ~/.config/rofi/powermenu/powermenu.sh
 
 super + ctrl + r
 	pkill -USR1 -x sxhkd && bspc wm -r
 
+super + s
+    bash ~/y.bash
 #  ------ brightness  -------- #
 
 XF86MonBrightnessUp
