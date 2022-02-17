@@ -1,8 +1,8 @@
-# Don't skip the README
+# Don't skip the README if you are new to linux
 ## Screenshots (BSPWM rice)
-`kitty & fish & neofetch` 
-<img src="https://raw.githubusercontent.com/Waishnav/dotfiles/main/screenshots/rofi_conky_pacman.png" align="center">
-
+Polybar & rofi-appsheet             |  rofi-window_switcher
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/Waishnav/dotfiles/main/screenshots/rofi-applications.png)  |  ![](https://raw.githubusercontent.com/Waishnav/dotfiles/main/screenshots/rofi-window_switcher.png)
 ## Info 
 ```
 OS              Arch x86_64
@@ -41,8 +41,8 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 
 |        Keybind           |                 Function                 |
 | ------------------------ | ---------------------------------------- |
-| `alt + T`                | Launch terminal (kitty)                  |
-| `alt + B`                | Launch Brave                             |
+| `Alt + T`                | Launch terminal (kitty)                  |
+| `Alt + B`                | Launch Brave                             |
 | `Super + W`              | Close window                             |
 | `Super + Space`          | Open rofi menu                           |
 | `Super + H/J/K/L`        | Navigate through windows                 |
@@ -51,10 +51,11 @@ These are the basic keybinds. Read through the `sxhkd/sxhkdrc` file for more key
 | `Super + F`              | Make a tiled window floating             |
 | `Super + 1/2/3/4/5/6`    | Switch the Workspaces                    |
 | `Super + Shift + T/W`    | Switch to the Tall/Wide layout           |
+| `Alt + Tab / l`          | Switch to next window                    |
 
 Note: 1. `Super` refers to the `Win` key.
 
-Note: 2. I used to the keybindings to close tab in browser `ctrl + w` thats why I use `Super + w` to close any window
+Note: 2. I used to the keybindings to close tabs in browser (`ctrl + w`) thats why I use `Super + w` to close any window
 
 ## Important Notes
 - BSPWM only handles window layouts so it need extra pair of hand to manage keybindings (sxhkd)
@@ -63,13 +64,24 @@ Note: 2. I used to the keybindings to close tab in browser `ctrl + w` thats why 
 - Change some values in polybar like in wlan , battery module for your wifi adapter etc , run polybar example to find out any erorrs if polybar isnt working.
 
 ## Installation 
-Firstly clone this repo by following cmd and cd into dotfiles
+   > This is step-by-step how to install these dotfiles. Just [R.T.F.M](https://en.wikipedia.org/wiki/RTFM).
+
+Firstly install these necessary dependencies to replicate my setup
+ > Assuming your **AUR Helper** is [yay](https://github.com/Jguer/yay).
+   ```bash
+    $ yay -S bspwm sxhkd rofi kitty picom-jonaburg-git \
+    feh jq dunst brightnessctl maim \
+    xclip imagemagick
+   ```
+Secondly clone my repo and do following steps
+> Also be ready to change some of the values of some variables in these configuration according to your computer hardware
 ```bash
 $ git clone https://github.com/Waishnav/dotfiles.git --branch main --single-branch
 $ cd ./dotfiles
-$ cp .config ~/
-$ sudo cp ./fonts/* /usr/share/fonts/ && sudo fc-cache -f -v
+$ cp -r .config ~/
+$ sudo cp -r ./fonts/* /usr/share/fonts/ && sudo fc-cache -f -v
 ```
 ## Todo
-- [ ] Documenting Installtion
-- [ ] macOS/Windows style window switching (alt+tab)
+- [x] Documenting Installtion
+- [x] macOS/Windows style window switching (alt+tab)
+- [ ] eww-bar and dashboard
