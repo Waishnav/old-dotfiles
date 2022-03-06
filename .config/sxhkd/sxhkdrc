@@ -8,7 +8,7 @@ alt + Tab
 alt + l
     bash ~/.config/rofi/window-switcher/window-switcher.sh
 alt + {v+s, t, b, f, n, o, g, s, d, i, z}
-  {code, kitty, brave, nemo, notion-app, obs, gimp, spotify, discord, inkscape, zoom}
+  {code, kitty, brave, nautilus, notion-app, obs, gimp, spotify, discord, inkscape, zoom}
 # reload config (bspwmrc and sxhkdrc)  #
 
 super + p

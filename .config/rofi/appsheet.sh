@@ -1,9 +1,7 @@
-xdotool search --sync --syncsleep 50 --limit 1 --class Rofi \
-    keyup --delay 0 Alt+Tab \
-    key --delay 0 Alt+Tab \
-    keyup --delay 0 Alt+Shift+Tab \
-    keydown --delay 0 Alt+Shift+Tab &
-path="~/.config/rofi/blurry2.rasi"
+#xdotool search --sync 50 --limit 1 --class Rofi \
+#    key --delay 0 Alt+Tab \
+
+path="~/.config/rofi/appsheet.rasi"
 
 options="\
        -kb-cancel "Super+Escape,Escape" \

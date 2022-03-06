@@ -1,0 +1,61 @@
+## Pacman ##
+bspwm
+sxhkd
+rofi
+polybar
+nemo
+ranger
+neofetch
+xinit and xorg-xinit
+feh
+git (sudo pacman -S --needed git base-devel)
+neovim
+{ Network setup NMmanagers wagera }
+maim xclip stow tree
+alsa pipewire pipewire-pulse pipewire-alsa
+zip unzip
+ttf-font-awesome noto-fonts-emoji ttf-dejavu
+htop
+##gtk settings (lxsession)
+mtpfs gvfs-mtp lxappearance  lxsession
+##qt5 settings
+qt5ct
+arc-gtk-theme
+kvantum gv4l2
+breeze-icons
+
+
+inkscape
+photoGimp
+VLC
+OBS
+pavucontrol
+zoom
+screenkeys
+kitty
+fish
+starship [promt]
+cheese
+CUPS [cups cups-pdf system-config-printer]
+firefox
+qutebrowser
+visual studio code
+conky
+networkmanagers
+
+## yay
+easyeffect
+figma-linux
+microsoft-edge-stable-bin
+picom-ibhagwan-git
+zoom
+obs-studio-browser obs-v4l2sink
+cursor-theme-macos-bigsur
+notion-app
+shell-color-scripts
+genymotion
+plank-theme-bigsur
+paper-icon-theme-git
+ytop
+
+

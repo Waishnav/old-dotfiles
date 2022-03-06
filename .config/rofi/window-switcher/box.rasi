@@ -1,8 +1,8 @@
 configuration {
-    font:                    "Open Sans Bold 10";
+    font:                    "Roboto Medium 11";
     show-icons:              true;
     icon-theme:              "Papirus";
-    disable-history:         false;
+    disable-history:         true;
     fullscreen:              false;
     hide-scrollbar:          true;
     sidebar-mode:            false;
@@ -23,6 +23,19 @@ configuration {
     border: #bd93f9;
     selected: argb:1Af8f8f2;
 }
+/* Light */
+/*
+* {
+    background: argb:40ffffff;
+    background-alt: argb:00202124;
+    background-bar: argb:66000000;
+    foreground: #f8f8f2;
+    foreground-alt: argb:ff121212;
+    accent: #44475a;
+    border: #bd93f9;
+    selected: argb:66202124;
+}
+*/
 
 window {
     transparency: "real";
@@ -30,8 +43,8 @@ window {
     text-color: @foreground;
     border: 2px;
     border-color: @background-bar;
-    border-radius: 11px;
-    height: 17.8%;
+    border-radius: 20px;
+    height: 18.8%;
     //width: 40%;
     location: center;
     x-offset: 0;
@@ -74,8 +87,9 @@ inputbar {
 
 listview {
     background-color: @background-alt;
-    columns: 10;
-    row: 2;
+    margin: 1% 0.6% 0% 0.6%;
+    columns: 8;
+    row: 1;
     spacing: 1%;
     cycle: true;
     dynamic: true;
@@ -114,9 +128,9 @@ element-text {
 
 element selected {
     background-color: @selected;
-    //text-color: @foreground-alt;
+    text-color: @foreground;
     border: 0% 0% 0% 0%;
-    border-radius: 10px;
+    border-radius: 9px;
     border-color: @border;
 }
 
