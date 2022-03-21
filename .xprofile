@@ -1,0 +1,13 @@
+killall conky
+conky &
+killall nm-applet
+nm-applet &
+killall mictray
+mictray &
+killall volti
+volti &
+killall blueman-tray
+blueman-tray &
+
+killall watcher
+watcher --start &
