@@ -1,0 +1,140 @@
+configuration {
+    font:                    "Roboto Medium 11";
+    show-icons:              true;
+    icon-theme:              "Papirus";
+    disable-history:         true;
+    fullscreen:              false;
+    hide-scrollbar:          true;
+    sidebar-mode:            false;
+    display-window:          "";
+    window-format :          "{t}";
+    window-thumbnail:        false;
+}
+
+/* Dark */
+
+* {
+    background: argb:80202124;
+    background-alt: argb:00202124;
+    background-bar: #fff2f225;
+    foreground: #f8f8f2;
+    foreground-alt: #000000;
+    accent: #44475a;
+    border: #bd93f9;
+    selected: argb:1Af8f8f2;
+}
+/* Light */
+/*
+* {
+    background: argb:40ffffff;
+    background-alt: argb:00202124;
+    background-bar: argb:66000000;
+    foreground: #f8f8f2;
+    foreground-alt: argb:ff121212;
+    accent: #44475a;
+    border: #bd93f9;
+    selected: argb:66202124;
+}
+*/
+
+window {
+    transparency: "real";
+    background-color: @background;
+    text-color: @foreground;
+    border: 2px;
+    border-color: @background-bar;
+    border-radius: 20px;
+    height: 18.8%;
+    //width: 40%;
+    location: center;
+    x-offset: 0;
+    y-offset: 0;
+}
+
+prompt {
+    enabled: false;
+    padding: 0.25% 0.75% 0% -0.25%;
+    background-color: @background;
+    text-color: @foreground-alt;
+    font: "Droid Sans Font:style=Bold 10";
+}
+
+entry {
+    enabled: false;
+    background-color: @background;
+    text-color: @foreground;
+    placeholder-color: @foreground;
+    expand: false;
+    horizontal-align: 0;
+    placeholder: "Switch to...";
+    padding: 0% 0% 0% 0%;
+    blink: true;
+    font: "Roboto Font 14";
+}
+
+inputbar {
+    enabled: false;
+    children: [ prompt, entry];
+    background-color: @background-bar;
+    text-color: @foreground-alt;
+    expand: false;
+    border: 0.3% 0% 0.3% 0%;
+    border-radius: 100%;
+    border-color: @accent;
+    margin: 0% 0% 0% 0%;
+    //padding: 1.25%;
+}
+
+listview {
+    background-color: @background-alt;
+    margin: 1% 0.6% 0% 0.6%;
+    columns: 8;
+    row: 1;
+    spacing: 1%;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+}
+
+mainbox {
+    background-color: @background;
+    border: 0% 0% 0% 0%;
+    border-radius: 0% 0% 0% 0%;
+    border-color: @accent;
+    children: [ inputbar, listview];
+    spacing: -100%;
+    padding: 2% 1% 0% 1%;
+}
+
+element {
+    background-color: @background-alt;
+    text-color: @foreground;
+    orientation: vertical;
+    border-radius: 100px;
+    padding: 2% 0% 1% 0%;
+}
+
+element-icon {
+    size: 50px;
+    border: 0px;
+}
+
+element-text {
+    expand: true;
+    horizontal-align: 0.5;
+    vertical-align: 0.9;
+    margin: 0.2% 0.5% 0.7% 0.5%;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @foreground;
+    border: 0% 0% 0% 0%;
+    border-radius: 9px;
+    border-color: @border;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}

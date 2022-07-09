@@ -1,0 +1,87 @@
+#! /bin/sh
+
+# disabling laptop keyboard
+xinput float 15
+
+#autostart apps
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# gtk themes and term colorsheme
+xrdb merge ~/.Xresources &
+kill picom
+kill polybar
+picom &
+
+# polybar
+~/.config/polybar/launch.sh &
+
+
+#global settings
+#bspc config automatic_scheme alternate
+#bspc config initial_polarity second_child
+#bspc config pointer_modifier lock
+#bspc config pointer_action1 move
+#bspc config pointer_action2 resize_side
+#bspc config pointer_action3 resize_corner
+#bspc config remove_disabled_monitors true
+#bspc config remove_unplugged_monitors true
+#bspc config merge_overlapping_monitors true
+
+
+# workspaces
+displayport="$(xrandr --query | grep -o "HDMI1 connected" | cut -d " " -f 1)"
+if [ -n "$displayport" ]; then
+  bspc monitor LVDS1 -d 1 2 3 4 5
+  bash ~/.screenlayout/display_profile.sh
+  bspc monitor HDMI1 -d 6 7
+  #xrandr --output LVDS-1 --off --output HDMI-1 --primary --mode 1366x768 --pos 0x0 -- rotate normal
+else
+  bspc monitor LVDS1 -d 1 2 3 4 5
+  bash ~/.screenlayout/normal_profile.sh
+fi
+
+
+bspc config focus_follows_pointer true
+
+bspc config top_padding 36
+#42
+
+# borders
+bspc config focused_border_color "#5c5c5c"
+#797d85
+bspc config normal_border_color "#373a3b"
+bspc config border_width  2
+bspc config borderless_monocle true
+#gaps
+bspc config gapless_monocle false
+bspc config window_gap 5
+bspc config split_ratio 0.50
+
+bspc rule -a Brave-browser desktop='^2'
+bspc rule -a notion-app desktop='^3' state=floating
+bspc rule -a audacity desktop='^4'
+bspc rule -a Gimp-2.10 desktop='^4'
+bspc rule -a Inkscape desktop='^4'
+bspc rule -a steam desktop='^5'
+bspc rule -a discord desktop='^5'
+bspc rule -a zoom desktop='^5' state=floating follow=on
+bspc rule -a Nemo state=floating follow=on
+bspc rule -a Pavucontrol state=floating
+bspc rule -a Rofi state=floating
+bspc rule -a TelegramDesktop state=floating
+bspc rule -a Blueberry.py state=floating
+bspc rule -a File-roller state=floating
+bspc rule -a "Picture in picture" state=floating
+
+
+
+pgrep bspswallow || bspswallow &
+
+# at startup
+#kitty
+#XDG_SESSION_TYPE=X11 plank
+
+#wallpaper and nvim
+feh --bg-fill ~/Images/wallpapers/karsten-wurth-karsten-wuerth-7BjhtdogU3A-unsplash.jpg
+kill conky & kill screenkey
+xsetroot -cursor_name left_ptr
