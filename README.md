@@ -78,7 +78,7 @@ Secondly clone my repo and do following steps
 ```bash
 $ git clone https://github.com/Waishnav/dotfiles.git --branch main --single-branch
 $ cd ./dotfiles
-$ cp -r .config ~/
+$ cp -r config ~/
 $ sudo cp -r ./fonts/* /usr/share/fonts/ && sudo fc-cache -f -v
 ```
 ## Todo
