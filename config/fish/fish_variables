@@ -1,7 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export GEM_HOME:/home/waishnav/\x2ervm/gems/ruby\x2d3\x2e0\x2e3
+SETUVAR --export --path GEM_PATH:/home/waishnav/\x2ervm/gems/ruby\x2d3\x2e0\x2e3/
 SETUVAR SXHKD_SHELL:bash
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -30,3 +32,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/home/waishnav/\x2erbenv/plugins/ruby\x2dbuild/bin\x1e/home/waishnav/\x2erbenv/bin\x1e/home/waishnav/\x2erbenv/shims\x1e/usr/share/rvm/bin\x1e/usr/share/rvm/rubies/ruby\x2d3\x2e0\x2e3/bin\x1e/home/waishnav/\x2elocal/bin

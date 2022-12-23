@@ -29,14 +29,14 @@ picom &
 
 
 # workspaces
-displayport="$(xrandr --query | grep -o "HDMI1 connected" | cut -d " " -f 1)"
+displayport="$(xrandr --query | grep -o "HDMI-A-0 connected" | cut -d " " -f 1)"
 if [ -n "$displayport" ]; then
-  bspc monitor LVDS1 -d 1 2 3 4 5
+  bspc monitor eDP -d 1 2 3 4 5
   bash ~/.screenlayout/display_profile.sh
-  bspc monitor HDMI1 -d 6 7
+  bspc monitor HDMI-A-0 -d 6 7
   #xrandr --output LVDS-1 --off --output HDMI-1 --primary --mode 1366x768 --pos 0x0 -- rotate normal
 else
-  bspc monitor LVDS1 -d 1 2 3 4 5
+  bspc monitor eDP -d 1 2 3 4 5
   bash ~/.screenlayout/normal_profile.sh
 fi
 
@@ -82,6 +82,9 @@ pgrep bspswallow || bspswallow &
 #XDG_SESSION_TYPE=X11 plank
 
 #wallpaper and nvim
-feh --bg-fill ~/Images/wallpapers/karsten-wurth-karsten-wuerth-7BjhtdogU3A-unsplash.jpg
+feh --bg-fill ~/Public/Installation/wallpapers/Linkin\ Park/0002.png
+
 kill conky & kill screenkey
 xsetroot -cursor_name left_ptr
+xinput set-prop 19 315 1
+xinput set-prop 19 292 1
